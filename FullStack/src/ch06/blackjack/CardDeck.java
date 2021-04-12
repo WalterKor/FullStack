@@ -43,8 +43,11 @@ public class CardDeck {
 		}		
 	}
 	
+	/*
+	 내가한답
 	public Card getoneCard() {//타입이 Card
 		int Number;
+		
 		label :
 		while(true) {//카드를 랜덤하게 준다. 뽑힌카드는 null로 만들어야한다.
 			Number = (int)(Math.random()*52);
@@ -58,6 +61,42 @@ public class CardDeck {
 		CARD_ARR[Number] = null;
 		return c;
 	}
+	*/
+	private int getRandomIdx() {
+		return(int)(Math.random()*CARD_ARR.length);
+	}
+	
+	public Card getoneCard() {
+		
+		Card c = null;
+		int idx = 0;
+		do {
+			idx = getRandomIdx();
+			c = CARD_ARR[idx];
+		}while(c == null);
+		
+		CARD_ARR[idx] = null;
+		
+		return c;
+		
+	}
+	/*
+	 //내가한 답 
+	public void printAll() {
+		for(int i=0; i<CARD_ARR.length; i++) {
+			System.out.println(String.format("CARD_ARR[%d] : %s",i, CARD_ARR[i]));
+		}
+	}
+	*/
+	
+	
+	
+	public void printAll() {
+		for(Card c : CARD_ARR) {
+			System.out.println(c);
+		}
+	}
+	
 	
 }
 

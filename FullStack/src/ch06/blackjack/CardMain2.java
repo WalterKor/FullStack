@@ -5,11 +5,19 @@ public class CardMain2 {//메인함수
 		new CardDeck();
 		
 		CardDeck cd = new CardDeck();
-		for(int i=0;i<52;i++)
-		{
+		
 			Card card1=cd.getoneCard();
 			System.out.println(card1);
-		}
+			
+			Card card2=cd.getoneCard();
+			System.out.println(card2);
+			
+			System.out.println("-----------------------");
+		
 //		Card card2 = new Card("",""); 객체로 들어가야한다. 
+		
+		cd.printAll();
+		
+		
 	}
 }
