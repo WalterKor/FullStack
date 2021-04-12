@@ -42,6 +42,23 @@ public class CardDeck {
 			}
 		}		
 	}
+	
+	public Card getoneCard() {//타입이 Card
+		int Number;
+		label :
+		while(true) {//카드를 랜덤하게 준다. 뽑힌카드는 null로 만들어야한다.
+			Number = (int)(Math.random()*52);
+			if(CARD_ARR[Number] == null) {
+				continue label;
+			}else {				
+				break label;
+			}
+		}
+		Card c = CARD_ARR[Number];
+		CARD_ARR[Number] = null;
+		return c;
+	}
+	
 }
 
 
