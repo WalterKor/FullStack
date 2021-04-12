@@ -84,7 +84,7 @@ public class CardDeck {
 	 //내가한 답 
 	public void printAll() {
 		for(int i=0; i<CARD_ARR.length; i++) {
-			System.out.println(String.format("CARD_ARR[%d] : %s",i, CARD_ARR[i]));
+			System.out.println(String.format("CARD_ARR[%d] : %s",i, CARD_ARR[i])); //배열값은 서식문자로 %s를 사용한다.
 		}
 	}
 	*/

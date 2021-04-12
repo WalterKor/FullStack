@@ -14,18 +14,18 @@ class Animal extends Object {
 	int age;
 
 	void howling() {
-		System.out.println("¿î´Ù.");
+		System.out.println("ìš´ë‹¤.");
 	}
 }
 
 class Cat extends Animal {
 	void lick() {
-		System.out.printf("%s°¡ Áq´Ù.\n", name);
+		System.out.printf("%sï¿½ï¿½ ï¿½qï¿½ï¿½.\n", name);
 	}
 
 	@Override
 	void howling() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 
 }
@@ -34,11 +34,11 @@ class Koshort extends Cat{
 	
 	Koshort(){
 		super();
-		System.out.println("KoshortÀÇ »ý¼ºÀÚ");
+		System.out.println("Koshortï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 	
 	void pee() {
-		System.out.printf("%s°¡ ¼Òº¯À» ´«´Ù\n",name);
+		System.out.printf("%sï¿½ï¿½ ï¿½Òºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n",name);
 	}
 }
 
