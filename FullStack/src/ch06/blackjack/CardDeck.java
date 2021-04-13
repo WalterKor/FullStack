@@ -8,6 +8,7 @@ public class CardDeck {
 	
 	private final int EACH_CARD_LEN = 13;	
 	private final Card[] CARD_ARR;
+	
 	public CardDeck() {
 		CARD_ARR = new Card[CARD_PATTERNS.length * EACH_CARD_LEN];
 		System.out.println(CARD_PATTERNS.length);		

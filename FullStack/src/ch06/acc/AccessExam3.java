@@ -1,7 +1,12 @@
 package ch06.acc;
+
+import ch07.RemoteControl;
+
 //import sec06.ch06.Access;
 public class AccessExam3 {
 	public static void main(String[] args) {
-		//Access acc = new Access(); //Á¢±ÙÀÌ µÇÁö ¾Ê´Â´Ù.
+		//Access acc = new Access(); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½.
+		System.out.println(RemoteControl.age);
+		
 	}
 }
