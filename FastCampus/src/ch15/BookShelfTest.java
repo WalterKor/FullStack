@@ -1,0 +1,21 @@
+package ch15;
+
+public class BookShelfTest {
+	public static void main(String[] args) {
+		
+		Queue bookQueue = new BookShelf();
+		bookQueue.enQueue("에반게리온");
+		bookQueue.enQueue("에반게리온1");
+		bookQueue.enQueue("에반게리온2");
+		bookQueue.enQueue("에반게리온3");
+		bookQueue.enQueue("에반게리온4");
+		
+		System.out.println(bookQueue.getSize());
+		System.out.println(bookQueue.deQueue());
+		System.out.println(bookQueue.deQueue());
+		System.out.println(bookQueue.deQueue());
+		
+		
+	}//end of main
+
+}//end of class
