@@ -5,7 +5,7 @@ import java.util.ArrayList;
 class Animal {
 
 	public void move() {
-		System.out.println("µ¿¹°ÀÌ ¿òÁ÷ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.");
 	}
 
 	public void eating() {
@@ -17,11 +17,11 @@ class Human extends Animal {
 
 	@Override
 	public void move() {
-		System.out.println("»ç¶÷ÀÌ µÎ¹ß·Î °È½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î¹ß·ï¿½ ï¿½È½ï¿½ï¿½Ï´ï¿½.");
 	}
 
 	public void readBook() {
-		System.out.println("»ç¶÷ÀÌ Ã¥À» ÀÐ½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¥ï¿½ï¿½ ï¿½Ð½ï¿½ï¿½Ï´ï¿½.");
 	}
 
 }
@@ -30,22 +30,22 @@ class Tiger extends Animal {
 
 	@Override
 	public void move() {
-		System.out.println("È£¶ûÀÌ°¡ ³×¹ß·Î ¶Ý´Ï´Ù.");
+		System.out.println("È£ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½×¹ß·ï¿½ ï¿½Ý´Ï´ï¿½.");
 	}
 
 	public void hunting() {
-		System.out.println("È£¶ûÀÌ°¡ »ç³ÉÀ» ÇÕ´Ï´Ù.");
+		System.out.println("È£ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ´Ï´ï¿½.");
 	}
 
 }
 
 class Eagle extends Animal {
 	public void move() {
-		System.out.println("µ¶¼ö¸®°¡ ÇÏ´ÃÀ» ³¯¾Æ ´Ù´Õ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù´Õ´Ï´ï¿½.");
 	}
 
 	public void flying() {
-		System.out.println("µ¶¼ö¸®°¡ ¾ç³¯°³¸¦ Æì°í ³¯¾Æ´Ù´Õ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ç³¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ´Ù´Õ´Ï´ï¿½.");
 	}
 }
 
@@ -69,7 +69,7 @@ public class AnimalTest {
 		for (Animal animal : animallList) {
 			animal.move();
 		}
-		
+
 		test.testDownCasting(animallList);
 
 	}// end of main
@@ -83,18 +83,15 @@ public class AnimalTest {
 
 				Human human = (Human) animal;
 				human.readBook();
-			}
-			else if (animal instanceof Tiger) {
+			} else if (animal instanceof Tiger) {
 
 				Tiger tiger = (Tiger) animal;
 				tiger.hunting();
-			}
-			else if (animal instanceof Eagle) {
+			} else if (animal instanceof Eagle) {
 
 				Eagle eagle = (Eagle) animal;
 				eagle.flying();
-			}
-			else {
+			} else {
 				System.out.println("unsupported type");
 			}
 		}
